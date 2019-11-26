@@ -121,8 +121,6 @@ function winSize() {
 	}
 }
 
-//disableButtons();
-
 var moveData = $ajaxUtils.sendGetRequest("data/moves.json", 
 	function (res) {
 		moveData = res;
