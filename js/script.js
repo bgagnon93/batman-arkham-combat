@@ -97,6 +97,8 @@ var scoreboardxsHtml = "snippets/scoreboard-xs.html";
 
 winSize();
 
+disableButtons();
+
 function winSize() {
 	if(window.innerWidth > 767) {
 		$ajaxUtils.sendGetRequest(
@@ -105,7 +107,6 @@ function winSize() {
 				document.querySelector("#scoreb")
 				.innerHTML = responseText;
 				updateScore();
-				disableButtons();
 			},
 			false);
 	} else {
@@ -115,7 +116,6 @@ function winSize() {
 				document.querySelector("#scoreb")
 				.innerHTML = responseText;
 				updateScore();
-				disableButtons();
 			},
 			false);
 	}
@@ -257,6 +257,15 @@ function updateScore() {
 	document.querySelector("#variation-bonus").innerHTML = "<span>" + variationBonus + "</span>";
 	document.querySelector("#gadget-variation").innerHTML = "<span>" + gadgetVariation + "</span>";
 	document.querySelector("#gadget-variation-bonus").innerHTML = "<span>" + gadgetVariationBonus + "</span>";
+
+	if(special) {
+		document.querySelector("#multiplier").style.color = "#D4AF37";
+		document.querySelector("#multiplier").style["text-shadow"] = "0px 0px 10px #D4AF37";
+	}
+	else {
+		document.querySelector("#multiplier").style.color = "#C6C6C6";
+		document.querySelector("#multiplier").style["text-shadow"] = "unset";
+	}
 }
 
 function disableButtons() {
@@ -283,15 +292,6 @@ function btnSpecial() {
 	document.querySelector("#multiground").disabled = !special;
 	document.querySelector("#disarm").disabled = !special;
 	document.querySelector("#swarm").disabled = !special;
-
-	if(special) {
-		document.querySelector("#multiplier").style.color = "#D4AF37";
-		document.querySelector("#multiplier").style["text-shadow"] = "0px 0px 10px #D4AF37";
-	}
-	else {
-		document.querySelector("#multiplier").style.color = "#C6C6C6";
-		document.querySelector("#multiplier").style["text-shadow"] = "unset";
-	}
 }
 
 
