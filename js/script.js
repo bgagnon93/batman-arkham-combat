@@ -88,10 +88,8 @@ var isStunned = false;
 var special = false;
 var specialCount = 0;
 
-//var allVarianceMoves = ["Strike", "Counter", "Ground Pound", "Stun", "Ultra-Stun", "Aerial Attack", "Beatdown", "Takedown", "Multiground", "Disarm", "Batswarm", "Batarang"];
 var currentVarianceMoves = [];
 
-//var allGadgets = ["Batarang", "Batclaw", "Freeze Gren.", "Explosive Gel", "Electric Gun"];
 var currentGadgets = [];
 
 var scoreboardHtml = "snippets/scoreboard.html";
@@ -155,10 +153,11 @@ function registerHit(hit) {
 	baseScore += multiplier * hitData["Point Value"];
 	isGrounded = hitData["Grounds"];
 	isStunned = hitData["Stuns"];
-	totalPoints = baseScore;
 
 	handleVariance(hit, hitData);
 	handleGadgetVariance(hit, hitData);
+
+	totalPoints = baseScore + variationBonus + gadgetVariationBonus;
 
 	updateScore();
 	btnGround();
@@ -284,6 +283,15 @@ function btnSpecial() {
 	document.querySelector("#multiground").disabled = !special;
 	document.querySelector("#disarm").disabled = !special;
 	document.querySelector("#swarm").disabled = !special;
+
+	if(special) {
+		document.querySelector("#multiplier").style.color = "#D4AF37";
+		document.querySelector("#multiplier").style["text-shadow"] = "0px 0px 10px #D4AF37";
+	}
+	else {
+		document.querySelector("#multiplier").style.color = "#C6C6C6";
+		document.querySelector("#multiplier").style["text-shadow"] = "unset";
+	}
 }
 
 

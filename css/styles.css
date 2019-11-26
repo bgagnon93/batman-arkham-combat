@@ -1,3 +1,7 @@
+ #header {
+  position: relative;
+ }
+
  #heading {
   font-family: 'Nanum Gothic', sans-serif;
  }
@@ -7,25 +11,38 @@
   font-size: 1.7em;
 }
 
-img {
+#arkham-png {
     width: 300px;
+}
+
+#lightning-png {
+    height: 150px;
+    margin: -10px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
 }
 
 #scoreboard > div {
   color: #C6C6C6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 #your-moves {
   margin-top: 0px;
+  font-weight: 500;
 }
 
 #move-list > div {
   color: #C6C6C6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .movebtn {
   height: 50px;
-  width: 80%;
+  width: 100%;
   align-content: center;
   margin: 5px 0px 5px 0px;
   color: #2F2F2F;
@@ -36,6 +53,10 @@ img {
   width: 80%;
   max-width: 700px;
   vertical-align: middle;
+  background-color: #e8843a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
 }
 
 .reset-div {
@@ -49,7 +70,8 @@ img {
 }
 
 .col-header {
-  color: #E4945A;
+  width: 100%;
+  color: #e8843a;
 }
 
 .orange {
@@ -57,15 +79,30 @@ img {
 }
 
 button:disabled {
-  background-color: white;
-  color: #8E8E8E;
+  /*background-color: white;*/
+  /*color: #8E8E8E;*/
+  opacity: 0.6;
+}
+
+button:enabled {
+  box-shadow: -1px 1px 3px white;
+}
+
+#header-padding {
+  padding-top: 5px;
 }
 
 header {
-  margin-top: 5px;
+  /*margin-top: 5px;*/
+  background: white;
+  /*position: fixed;*/
 }
 
-#main-content {
+/*#main-content {
+  background: #191919;
+}*/
+
+#body {
   background: #191919;
 }
 
@@ -74,11 +111,15 @@ hr.red {
 }
 
 @media (min-width: 1200px) {
-
+  #lightning-png {
+    height: 275px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+  #lightning-png {
+    height: 240px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -90,19 +131,19 @@ hr.red {
   #subheading {
     font-size: 2.15vw;
   }
-  img {
+  #arkham-png {
     width: 40%;
   }
 }
 
 @media (max-width: 767px) {
-#scoreboard-title {
-  margin-left: -15px;
-}
+  #scoreboard-title {
+    margin-left: -15px;
+  }
 
-#your-moves {
-  margin-left: -15px;
-}
+  #your-moves {
+    margin-left: -15px;
+  }
 
   .content-header {
     font-size: 1.8em;
@@ -116,8 +157,17 @@ hr.red {
     font-size: 2.6vw;
   }
 
-  img {
+  #arkham-png {
     width: 40%;
+  }
+
+  .col-header {
+    text-align: center;
+    width: 130px;
+  }
+
+  #special-moves {
+    width: 100%;
   }
 
   .movebtn {
@@ -136,5 +186,14 @@ hr.red {
     .movebtn {
       font-size: 2.8vw;
     }
+
+    .col-header {
+      font-size: 3vw;
+      width: 100%;
+    }
+  }
+
+  #lightning-png {
+    height: 24vw;
   }
 }
