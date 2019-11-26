@@ -142,8 +142,8 @@ function reset() {
 
 	updateScore();
 	disableButtons();
-	var currentVarianceMoves = [];
-	var currentGadgets = [];
+	currentVarianceMoves = [];
+	currentGadgets = [];
 }
 
 function registerHit(hit) {
