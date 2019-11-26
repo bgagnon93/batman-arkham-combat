@@ -1,0 +1,178 @@
+{
+	"Strike": {
+		"Point Value": 10,
+		"Multiplier": [1, 2],
+		"Grounds": true,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Counter": {
+		"Point Value": 10,
+		"Multiplier": [1, 1],
+		"Grounds": true,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Ground Pound": {
+		"Point Value": 75,
+		"Multiplier": [1, 1],
+		"Grounds": false,
+		"Stuns": false,
+		"Requires Ground": true,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Stun": {
+		"Point Value": 0,
+		"Multiplier": [0, 0],
+		"Grounds": false,
+		"Stuns": true,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Ultra Stun": {
+		"Point Value": 0,
+		"Multiplier": [0, 0],
+		"Grounds": true,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Aerial Attack": {
+		"Point Value": 25,
+		"Multiplier": [1, 1],
+		"Grounds": true,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": true,
+		"Requires Special": false,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Beatdown": {
+		"Point Value": 50,
+		"Multiplier": [5, 5],
+		"Grounds": false,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": true,
+		"Requires Special": false,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Takedown": {
+		"Point Value": 60,
+		"Multiplier": [1, 1],
+		"Grounds": false,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": true,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Multiground": {
+		"Point Value": 20,
+		"Multiplier": [1, 1],
+		"Grounds": false,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": true,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Disarm": {
+		"Point Value": 25,
+		"Multiplier": [1, 1],
+		"Grounds": false,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": true,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Bat Swarm": {
+		"Point Value": 0,
+		"Multiplier": [0, 0],
+		"Grounds": false,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": true,
+		"Required for Variance": true,
+		"Required for Gadget Variance": false
+	},
+	"Batarang": {
+		"Point Value": 10,
+		"Multiplier": [1, 1],
+		"Grounds": true,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": true,
+		"Required for Gadget Variance": true
+	},
+	"Batclaw": {
+		"Point Value": 75,
+		"Multiplier": [2, 2],
+		"Grounds": true,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": false,
+		"Required for Gadget Variance": true
+	},
+	"Explosive Gel": {
+		"Point Value": 0,
+		"Multiplier": [0, 0],
+		"Grounds": true,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": false,
+		"Required for Gadget Variance": true
+	},
+	"Freeze Gren.": {
+		"Point Value": 0,
+		"Multiplier": [0, 0],
+		"Grounds": false,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": false,
+		"Required for Gadget Variance": true
+	},
+	"Electric Gun": {
+		"Point Value": 0,
+		"Multiplier": [0, 0],
+		"Grounds": false,
+		"Stuns": false,
+		"Requires Ground": false,
+		"Requires Stun": false,
+		"Requires Special": false,
+		"Required for Variance": false,
+		"Required for Gadget Variance": true
+	}
+}

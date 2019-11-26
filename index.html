@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=1000"> -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img class="visible-xs visible-sm visible-md visible-lg pull-left" src="images/arkham-city-header.png"><span>
+				<h1 id="heading">Batman: Arkham Combat</h1>
+				<h2 id="subheading">an <span class="orange">Orange Lightning</span> Supplemental</h2>
+			</span>
+			
+		</div>
+	</header>
+
+	<div id="main-content">
+		<div id="scoreb"></div>
+		<div id="move-list" class="container">
+			<div class="row">
+				<div class="col-xs-1 col-sm-1 col-md-2 col-lg-3">&nbsp</div>
+				<h2 id="your-moves" class="content-header col-xs-8 col-sm-8 col-md-6 col-lg-5">Your Moves:</h2>
+				<!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 reset-div"><button id="reset" class="reset btn-warning">Reset</button></div> -->
+				<div class="col-xs-1 col-sm-1 col-md-2 col-lg-2">&nbsp</div>			
+			</div>
+			
+			<div class="col-sm-1 col-md-2 col-lg-3 visible-sm visible-md visible-lg">&nbsp</div>
+			<div id="move-table" class="col-xs-12 col-sm-10 col-md-8 col-lg-7">
+				<div class="row">
+					<div class="col-header col-xs-4"><th>Basic&nbspMoves</th></div>
+					<div class="col-xs-8"><th>&nbsp</th></div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<button id="strike" type="button" class="movebtn">Strike</button>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<button id="counter" class="movebtn">Counter</button>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<button id="groundpound" class="movebtn">Ground Pound</button>
+					</div>
+				</div>
+				<!-- <div class="row">
+					<div class="col-xs-1 visible-xs">&nbsp</div>
+					<div class="col-xs-10 col-sm-12 col-lg-12"><hr class="red"></div>
+				</div> -->
+				<div class="row">
+					<div class="move-col col-xs-4">
+						<div class="col-header"><th>Stun&nbspMoves</th></div>
+						<div><button id="stun" class="btn-secondary stuns movebtn">Stun</button></div>
+						<div><button id="ultrastun" class="btn-secondary stuns movebtn">Ultra-Stun</button></div>
+						<div><button id="aerial" class="btn-secondary stuns requires-stun movebtn">Aerial Attack</button></div>
+						<div><button id="beatdown" class="btn-secondary stuns requires-stun movebtn">Beatdown</button></div>
+					</div>
+					<div class="move-col col-xs-4">
+						<div class="col-header"><th>Special&nbspMoves</th></div>
+						<div><button id="takedown" class="btn-secondary special movebtn">Takedown</button></div>
+						<div><button id="multiground" class="btn-secondary special movebtn">Multiground</button></div>
+						<div><button id="disarm" class="btn-secondary special movebtn">Disarm</button></div>
+						<div><button id="swarm" class="btn-secondary special movebtn">Bat Swarm</button></div>
+					</div>
+					<div class="move-col col-xs-4">
+						<div class="col-header"><th>Gadgets</th></div>
+						<div><button id="batarang" class="btn-secondary gadget movebtn">Batarang</button></div>
+						<div><button id="batclaw" class="btn-secondary gadget movebtn">Batclaw</button></div>
+						<div><button id="freeze" class="btn-secondary gadget movebtn">Freeze Gren.</button></div>
+						<div><button id="gel" class="btn-secondary gadget movebtn">Explosive Gel</button></div>
+						<div><button id="electric" class="btn-secondary gadget movebtn">Electric Gun</button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1 col-sm-1 col-md-2 col-lg-3">&nbsp</div>
+				<div class="col-xs-10 col-sm-10 col-md-8 col-lg-7"><hr class="red"></div>
+				<!-- <div class="col-xs-1 col-sm-1 col-md-2 col-lg-2">&nbsp</div> -->
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1 col-sm-1 col-md-2 col-lg-3">&nbsp</div>
+				<div class="col-xs-10 col-sm-10 col-md-8 col-lg-7"><div class="reset-div"><button id="reset" class="reset btn-warning">Reset</button></div></div>
+				<!-- <div class="col-xs-1 col-sm-1 col-md-2 col-lg-2">&nbsp</div> -->
+			</div>
+		</div>
+	</div>
+
+
+		<footer>
+			<div class="container">
+				<span>I'm trying to learn web development - give me project ideas...</span>
+			</div>
+		</footer>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/ajax-utils.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+	</html>

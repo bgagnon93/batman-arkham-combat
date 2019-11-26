@@ -1,0 +1,140 @@
+ #heading {
+  font-family: 'Nanum Gothic', sans-serif;
+ }
+
+ #subheading {
+  margin-top: 5px;
+  font-size: 1.7em;
+}
+
+img {
+    width: 300px;
+}
+
+#scoreboard > div {
+  color: #C6C6C6;
+}
+
+#your-moves {
+  margin-top: 0px;
+}
+
+#move-list > div {
+  color: #C6C6C6;
+}
+
+.movebtn {
+  height: 50px;
+  width: 80%;
+  align-content: center;
+  margin: 5px 0px 5px 0px;
+  color: #2F2F2F;
+}
+
+#reset {
+  height: 40px;
+  width: 80%;
+  max-width: 700px;
+  vertical-align: middle;
+}
+
+.reset-div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+#move-table {
+  text-align: center;
+}
+
+.col-header {
+  color: #E4945A;
+}
+
+.orange {
+  color: #F1812E;;
+}
+
+button:disabled {
+  background-color: white;
+  color: #8E8E8E;
+}
+
+header {
+  margin-top: 5px;
+}
+
+#main-content {
+  background: #191919;
+}
+
+hr.red {
+  border-top: 1px solid #891717;
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #heading {
+    margin-top: 40px;
+    font-size: 3.3vw;
+  }
+
+  #subheading {
+    font-size: 2.15vw;
+  }
+  img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+#scoreboard-title {
+  margin-left: -15px;
+}
+
+#your-moves {
+  margin-left: -15px;
+}
+
+  .content-header {
+    font-size: 1.8em;
+  }
+  #heading {
+    margin-top: 25px;
+    font-size: 4vw;
+  }
+
+  #subheading {
+    font-size: 2.6vw;
+  }
+
+  img {
+    width: 40%;
+  }
+
+  .movebtn {
+    height: 10vw;
+    max-height: 50px;
+    width: 100%;
+    max-width: 130px;
+    align-content: center;
+  }
+
+  @media (max-width: 480px) {
+    .scoreboard-elements {
+      font-size: 3vw;
+    }
+
+    .movebtn {
+      font-size: 2.8vw;
+    }
+  }
+}
