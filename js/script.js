@@ -89,7 +89,6 @@ var special = false;
 var specialCount = 0;
 
 var currentVarianceMoves = [];
-
 var currentGadgets = [];
 
 var scoreboardHtml = "snippets/scoreboard.html";
@@ -143,6 +142,8 @@ function reset() {
 
 	updateScore();
 	disableButtons();
+	var currentVarianceMoves = [];
+	var currentGadgets = [];
 }
 
 function registerHit(hit) {
